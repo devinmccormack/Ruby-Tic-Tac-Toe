@@ -5,4 +5,10 @@ class Player
     @name = name
     @symbol = symbol
   end
+
+  def get_move
+    puts "#{name}, enter your move as row,col:"
+    gets.chomp.split(',').map(&:to_i)
+  end
+  
 end
