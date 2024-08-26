@@ -1,7 +1,7 @@
 class Game
-  def initialize
+  def initialize(player1_name, player2_name)
     @board = Board.new
-    @players = [Player.new("Player 1", "X"), Player.new("Player 2", "O")]
+    @players = [Player.new(player1_name, "X"), Player.new(player2_name, "O")]
     @current_player = @players.first
   end
 
@@ -23,7 +23,7 @@ class Game
           switch_turns
         end
       else
-        puts "Invalid move. Please try again."
+        puts "Invalid move, try again."
       end
     end
   end

@@ -9,14 +9,12 @@ class Main
     # Initialize players
     puts "Enter Player 1's name:"
     player1_name = gets.chomp
-    player1 = Player.new(player1_name, "X")
 
     puts "Enter Player 2's name:"
     player2_name = gets.chomp
-    player2 = Player.new(player2_name, "O")
 
     # Start a new game
-    game = Game.new(player1, player2)
+    game = Game.new(player1_name, player2_name)
     game.play
 
     # Option to restart the game
