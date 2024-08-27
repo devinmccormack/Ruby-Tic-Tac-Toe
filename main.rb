@@ -13,7 +13,7 @@ class Main
     puts "Enter Player 2's name:"
     player2_name = gets.chomp
 
-    # Start a new game
+    # Start a new game and pass along player details
     game = Game.new(player1_name, player2_name)
     game.play
 

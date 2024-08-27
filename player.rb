@@ -5,7 +5,7 @@ class Player
     @name = name
     @marker = marker
   end
-
+  
   def get_move
     loop do
       puts "#{name}, enter your move as 'row,col' (e.g., 0,1):"
